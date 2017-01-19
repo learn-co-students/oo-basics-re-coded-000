@@ -6,18 +6,29 @@ def initialize(brand)
   @brand=brand
 end
 
-def cobble
-  self.condition = "new"
-     puts "Your shoe is as good as new!"
-#   if condition.class == Condition
-#   @condition=condition
-# else
-  # puts "Your shoe is as good as new!"
+  def cobble
+    puts "Your shoe is as good as new!"
+#first_way:
+    # if self.condition != "new"
+    #   @condition = "new"
+    # else
+    #   @condition
+    # end
 
-  # if @condition=="old"
-  #   return @condition=="new"
-  # else @condition
-  # end
-end
+#second_way
+    # if @condition == "tattered"
+    #   @condition = "new"
+    # end
+
+#third_way
+    @condition = "new"
+
+#fourth_way
+    # ternary operator
+    # @condition == "tattered" ? @condition = "new" : @condition
+
+#fourth_way
+    #self.condition = "new"  #also works instead of ( @condition = "new" )
+  end
 
 end
